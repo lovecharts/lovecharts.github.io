@@ -1,0 +1,371 @@
+/* Upload Form Styling */
+.upload-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.upload-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #ff4f8b;
+  text-align: center;
+  font-weight: 700;
+}
+
+.upload-container p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#uploadForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#uploadForm input[type="text"],
+#uploadForm input[type="email"],
+#uploadForm select {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+#uploadForm input[type="text"]:focus,
+#uploadForm input[type="email"]:focus,
+#uploadForm select:focus {
+  border-color: #ff4f8b;
+  box-shadow: 0 0 0 2px rgba(255, 79, 139, 0.2);
+  outline: none;
+}
+
+#uploadForm select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ff4f8b' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  padding-right: 40px;
+}
+
+.file-upload-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#uploadForm .file-upload-label {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #f8f9fa;
+  border: 2px dashed #d1d1d1;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+#uploadForm .file-upload-label:hover {
+  border-color: #ff4f8b;
+  background-color: #fff6f9;
+}
+
+#uploadForm .file-upload-label i {
+  font-size: 1.5rem;
+  color: #ff4f8b;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#uploadForm input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#uploadForm .file-name {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  word-break: break-word;
+}
+
+#uploadForm button[type="submit"] {
+  background-color: #ff4f8b;
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 79, 139, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 10px;
+}
+
+#uploadForm button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 79, 139, 0.4);
+}
+
+/* Thank You Message Styling */
+.thank-you-message {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 500px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.6s ease;
+}
+
+.thank-you-message.active {
+  display: block;
+}
+
+.thank-you-message .icon {
+  font-size: 3rem;
+  color: #ff4f8b;
+  margin-bottom: 20px;
+}
+
+.thank-you-message h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.thank-you-message p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.thank-you-message .home-button {
+  display: inline-block;
+  background-color: #ff4f8b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(255, 79, 139, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thank-you-message .home-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 79, 139, 0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 30px 20px;
+    margin: 40px 15px;
+    border-radius: 15px;
+  }
+
+  input{
+  max-width:76.5vw; 
+ }  
+  .upload-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  #uploadForm button[type="submit"] {
+    padding: 14px 25px;
+  }
+}
+
+/* Extra optimization for smaller mobile devices */
+@media (max-width: 480px) {
+  .upload-container {
+    padding: 25px 15px;
+    margin: 30px 10px;
+  }
+  
+  .upload-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .upload-container p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  #uploadForm {
+    gap: 15px;
+  }
+
+  #uploadForm .file-upload-label {
+    margin: auto;
+    width: 86% !important;
+  }
+  
+  #uploadForm input[type="text"],
+  #uploadForm input[type="email"],
+  #uploadForm select {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+  
+  #uploadForm .file-upload-label {
+    padding: 14px 15px;
+    font-size: 0.95rem;
+  }
+  
+  #uploadForm .file-upload-label i {
+    font-size: 1.3rem;
+  }
+  
+  #uploadForm button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+  
+  .thank-you-message {
+    padding: 30px 15px;
+    border-radius: 12px;
+  }
+  
+  .thank-you-message .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .thank-you-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  
+  .thank-you-message p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .thank-you-message .home-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 480px) {
+  #uploadForm button[type="submit"] {
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 15px;
+  }
+  
+  .file-upload-container {
+    margin-bottom: 5px;
+  }
+  
+  #uploadForm .file-upload-label {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #uploadForm .file-upload-label i {
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+  
+  /* Fix for iOS touch devices */
+  input, select, button, .file-upload-label {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Fix file select for iOS */
+  input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  
+  /* Improved spacing for mobile */
+  .upload-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Portrait orientation optimization */
+@media (max-width: 480px) and (orientation: portrait) {
+  .upload-container {
+    max-width: 100%;
+  }
+}
+
+/* Better form display on very small devices */
+@media (max-width: 360px) {
+  .upload-container h2 {
+    font-size: 1.4rem;
+  }
+  
+  #uploadForm input[type="text"],
+  #uploadForm input[type="email"],
+  #uploadForm select {
+    padding: 10px 12px;
+  }
+  
+  #uploadForm .file-upload-label {
+    padding: 12px;
+  }
+  
+  .thank-you-message h3 {
+    font-size: 1.3rem;
+  }
+  
+  .thank-you-message p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Handle devices with notches */
+@supports(padding: max(0px)) {
+  .upload-container {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+}
+
+/* Fix for iOS inputs */
+@supports (-webkit-touch-callout: none) {
+  input, select {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+}
