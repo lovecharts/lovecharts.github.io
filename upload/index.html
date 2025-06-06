@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Charts – Upload Your Chat</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Upload your WhatsApp or Instagram chat to turn it into a beautiful, personalized Love Chart. Perfect gift for your partner, best friend, or family.">
+    <meta name="keywords"
+        content="love charts, chat upload, chat posters, whatsapp chat gift, personalized chart, relationship gift, anniversary gift, custom poster">
+    <meta name="author" content="Love Charts">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for WhatsApp/Facebook -->
+    <meta property="og:title" content="Love Charts – Upload Your Chat">
+    <meta property="og:description"
+        content="Turn your messages into something magical. Upload your chat now and get your personalized Love Chart.">
+    <meta property="og:image" content="https://yourdomain.in/preview.jpg"> <!-- Replace with real image -->
+    <meta property="og:url" content="https://yourdomain.in/upload"> <!-- Replace with actual page URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assests/images/logo/logo16.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assests/css/style.css">
+    <link rel="stylesheet" href="../assests/css/upload.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../assests/images/logomainWithoutText.png" alt="Love Charts Logo">
+            <h1>Love Charts</h1>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a onclick="window.location.href='../'">Home</a>
+            <a onclick="specialGoTo('gallery')">Gallery</a>
+            <a onclick="specialGoTo('odernow')">Order Now</a>
+            <a onclick="smoothScrollTo('footer')">Contact</a>
+        </div>
+    </nav>
+
+    <div class="upload-container">
+        <h2>Upload Your Chat</h2>
+        <p>Share your special moments with us, and we'll transform them into a beautiful Love Chart that tells your
+            unique story.</p>
+
+        <form id="uploadForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <select name="productType"required>
+                <option value="">Choose Your Product Type</option>
+                <option value="Digital">Digital</option>
+                <option value="Instagram">Framed</option>
+            </select>
+
+            <select name="themeType" required>
+                <option value="">Choose Your Theme</option>
+                <option value="Azure Bloom">Azure Bloom</option>
+                <option value="Linene Blue">Linene Blue</option>
+                <option value="Rose Essence">Rose Essence</option>
+                <option value="Linen Pink">Linen Pink</option>
+            </select>
+
+            <div class="file-upload-container">
+                <label for="chat-file" class="file-upload-label">
+                    <i class="fas fa-cloud-upload-alt"></i> Choose your chat file 
+                </label>
+                <input type="file" id="chat-file" name="file" required>
+                <div class="file-name">No file selected<small style="font-size: small;"> (Max file size : 100MB)</small></div>
+            </div>
+
+            <button type="submit">Upload & Create My Chart</button>
+        </form>
+
+        <p id="status"></p>
+    </div>
+
+
+
+    <div class="data-privacy-section">
+        <div class="privacy-container">
+            <div class="privacy-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="privacy-content">
+                <h3>Your Privacy Is Our Priority</h3>
+                <p>We understand that your conversations are personal and meaningful. That's why we've designed our process with your privacy as the absolute priority:</p>
+                <ul class="privacy-points">
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <span><strong>Automated Processing:</strong> Your chats are analyzed by our secure algorithm only—never read by human eyes.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <span><strong>Encrypted Upload:</strong> All data is transmitted using end-to-end encryption protocols.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-trash-alt"></i>
+                        <span><strong>Automatic Deletion:</strong> Your raw conversation data is permanently deleted after your Love Chart is created.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-file-alt"></i>
+                        <span><strong>No Data Retention:</strong> We only keep the visualization data needed to create your chart, not the actual messages.</span>
+                    </li>
+                </ul>
+                <div class="privacy-seal">
+                    <i class="fas fa-check-circle"></i>
+                    <p>We believe beautiful memories shouldn't compromise your privacy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="../assests/images/footerlogo.png" alt="Love Charts Logo">
+                <h1>Love Charts</h1>
+            </div>
+
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <a href="mailto:contact.lovecharts@gmail.com" target="_blank"  class="contact-item">
+                            <i class="fas fa-envelope"></i> contact.lovecharts@gmail.com
+                        </a>
+                        <a href="https://instagram.com/lovecharts_" target="_blank" class="contact-item">
+                            <i class="fab fa-instagram"></i> @lovecharts_
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://instagram.com/lovecharts_" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:contact.lovecharts@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i
+                        class="fab fa-pinterest"></i></a>
+            </div>
+
+            <p>Turn your conversations into beautiful memories that last forever.</p>
+            <p class="copyright">&copy; 2025 Love Charts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assests/js/upload.js"></script>
+</body>
+
+</html>
