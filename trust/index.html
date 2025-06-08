@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Center - Your Privacy, Our Priority | Love Charts</title>
+
+    <meta name="description"
+        content="Love Charts Trust Center - Complete transparency about how we protect your conversations and personal data. Your privacy is our absolute priority.">
+    <meta name="keywords"
+        content="love charts privacy, data protection, trust center, secure chat processing, privacy policy">
+    <meta name="author" content="Love Charts">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Trust Center - Your Privacy, Our Priority | Love Charts">
+    <meta property="og:description"
+        content="Complete transparency about how Love Charts protects your conversations and personal data.">
+    <meta property="og:image" content="https://yourdomain.in/trust-preview.jpg">
+    <meta property="og:url" content="https://yourdomain.in/trust-center">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assests/images/logo/logo16.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --pink-light: #ffd6e7;
+            --pink-medium: #ff9ec6;
+            --pink-dark: #ff6ba9;
+            --blue-light: #d6f0ff;
+            --blue-medium: #9ed4ff;
+            --blue-dark: #6bb9ff;
+            --text-dark: #5a3d4e;
+            --text-light: #8a7b83;
+            --white: #fff9fb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        * {
+    font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Your existing rule */
+}
+
+/* Add this to ensure Font Awesome's font-family is used for icons */
+.fa, .fas, .far, .fal, .fab {
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands' !important; /* Adjust based on your FA version */
+}
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--white);
+            padding: 0.8em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(255, 105, 169, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 35px;
+            margin-right: 8px;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 1.5em;
+            font-weight: 600;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--pink-dark);
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--pink-medium);
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .trust-hero {
+            padding: 4em 2em 3em;
+            background: linear-gradient(135deg, var(--pink-light), var(--blue-light));
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-hero::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+
+        .trust-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 250px;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+        }
+
+        .trust-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: var(--text-dark);
+            position: relative;
+            z-index: 1;
+        }
+
+        .trust-hero p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 2em;
+            color: var(--text-dark);
+            position: relative;
+            z-index: 1;
+        }
+
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            padding: 1em 2em;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(255, 150, 200, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .trust-badge i {
+            font-size: 2em;
+            color: var(--pink-medium);
+            margin-right: 0.5em;
+        }
+
+        .trust-badge-text h3 {
+            margin: 0;
+            color: var(--text-dark);
+            font-size: 1.1em;
+        }
+
+        .trust-badge-text p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        /* Main Content */
+        .trust-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4em 2em;
+        }
+
+        .trust-section {
+            margin-bottom: 4em;
+            background: white;
+            border-radius: 20px;
+            padding: 3em;
+            box-shadow: 0 10px 30px rgba(255, 150, 200, 0.1);
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            position: relative;
+        }
+
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--pink-medium), var(--blue-medium));
+            border-radius: 20px 20px 0 0;
+        }
+
+        .section-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--pink-medium), var(--blue-medium));
+            border-radius: 50%;
+            margin-bottom: 1.5em;
+        }
+
+        .section-icon i {
+            font-size: 1.8em;
+            color: white;
+        }
+
+        .trust-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            color: var(--text-dark);
+        }
+
+        .trust-section p {
+            margin-bottom: 1.5em;
+            color: var(--text-light);
+            font-size: 1.1em;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            margin: 2em 0;
+        }
+
+        .feature-item {
+            padding: 2em;
+            background: var(--blue-light);
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 150, 200, 0.15);
+        }
+
+        .feature-item i {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            background: linear-gradient(45deg, var(--pink-medium), var(--blue-medium));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+            color: var(--text-dark);
+        }
+
+        .feature-item p {
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* Process Steps - FIXED AND OPTIMIZED FOR MOBILE */
+        .process-timeline {
+            position: relative;
+            margin: 3em auto; /* Center the timeline itself */
+            max-width: 900px; /* Limit max width for better readability */
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--pink-medium), var(--blue-medium));
+            transform: translateX(-50%);
+        }
+
+        .timeline-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3em;
+            position: relative;
+            width: 100%; /* Take full width of the parent */
+            justify-content: space-between; /* Distribute items */
+        }
+
+        .timeline-step:nth-child(odd) {
+            flex-direction: row; /* Default: content on right, number on left */
+            padding-right: 0; /* Reset for odd steps */
+        }
+
+        .timeline-step:nth-child(even) {
+            flex-direction: row-reverse; /* Content on left, number on right */
+            padding-left: 0; /* Reset for even steps */
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--pink-medium), var(--blue-medium));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+            margin: 0 1.5em; /* Keep some horizontal margin */
+            flex-shrink: 0; /* Prevent it from shrinking */
+        }
+
+        .step-content {
+            flex: 1;
+            max-width: calc(50% - 60px); /* Adjust max-width based on step-number width and gap */
+            background: white; /* Add background to content for clarity */
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255, 182, 193, 0.2);
+        }
+
+        .timeline-step:nth-child(odd) .step-content {
+            margin-right: 0; /* No margin on the right for odd steps */
+            margin-left: auto; /* Push content to the right */
+        }
+
+        .timeline-step:nth-child(even) .step-content {
+            margin-left: 0; /* No margin on the left for even steps */
+            margin-right: auto; /* Push content to the left */
+            text-align: right; /* Align text to the right for even steps */
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            background: linear-gradient(135deg, var(--pink-light), var(--blue-light));
+            border-radius: 20px;
+            padding: 3em;
+            text-align: center;
+            margin: 3em 0;
+        }
+
+        .guarantee-icon {
+            font-size: 4em;
+            color: var(--pink-medium);
+            margin-bottom: 1em;
+        }
+
+        .guarantee-section h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: var(--text-dark);
+        }
+
+        .guarantee-section p {
+            font-size: 1.2em;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 1.5em;
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: var(--pink-light);
+            padding: 1.5em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .faq-question:hover {
+            background: var(--pink-medium);
+            color: white;
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            padding: 1.5em;
+            background: white;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        /* CTA Section */
+        .trust-cta {
+            text-align: center;
+            padding: 3em 0;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, var(--pink-medium), var(--pink-dark));
+            color: white;
+            padding: 1em 2em;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 105, 169, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 105, 169, 0.4);
+        }
+
+                /* Footer - PC VERSION (Updated) */
+        footer {
+            background-color: var(--pink-light);
+            padding: 3em 2em; /* More generous padding */
+            margin-top: 4em;
+            color: var(--text-dark);
+        }
+
+        footer .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Distribute items */
+            align-items: flex-start; /* Align items to the top */
+            flex-wrap: wrap; /* Allow wrapping for smaller desktops */
+            gap: 2em; /* Gap between columns */
+        }
+
+        footer .footer-col {
+            flex: 1; /* Each column takes equal space */
+            min-width: 200px; /* Minimum width for columns before wrapping */
+            text-align: left;
+        }
+
+        footer .footer-col.footer-info {
+            flex: 1.5; /* Info column can be wider */
+            min-width: 250px;
+        }
+
+        footer .footer-col h3 {
+            font-size: 1.3em;
+            margin-bottom: 1em;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        footer .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer .footer-col ul li {
+            margin-bottom: 0.8em;
+        }
+
+        footer .footer-col ul li a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        footer .footer-col ul li a:hover {
+            color: var(--pink-dark);
+        }
+
+        footer .footer-col p,
+        footer .footer-col address {
+            font-size: 0.95em;
+            margin-bottom: 0.8em;
+            color: var(--text-light);
+        }
+        footer .footer-col address {
+            font-style: normal; /* Reset italic for address */
+        }
+
+        footer .social-icons a {
+            font-size: 1.5em;
+            color: var(--text-dark);
+            margin-right: 1em;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: var(--pink-dark);
+        }
+
+        footer .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 2em;
+            margin-top: 2em;
+            border-top: 1px solid rgba(255, 182, 193, 0.3);
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+        footer .footer-bottom p {
+            margin: 0;
+        }
+
+
+         @media (max-width: 768px) {
+            body {
+                font-size: 16px; /* Base font size for better readability on small screens */
+            }
+
+            /* Navigation */
+            nav {
+                padding: 1em 1.5em; /* More generous padding */
+                flex-wrap: wrap; /* Allow wrapping */
+                justify-content: center; /* Center logo by default */
+                box-shadow: 0 3px 15px rgba(255, 105, 169, 0.15); /* Slightly more prominent shadow */
+            }
+
+            .logo {
+                width: 100%; /* Take full width */
+                justify-content: center; /* Center logo and text */
+                margin-bottom: 1em; /* Space below logo */
+            }
+
+            .logo img {
+                width: 40px; /* Slightly larger logo */
+            }
+
+            nav h1 {
+                font-size: 1.6em; /* Larger heading */
+            }
+
+            /* Mobile Navigation Menu - Toggle for better UX */
+            nav > div:last-child { /* Targets the div containing the nav links */
+                display: flex;
+                flex-direction: column; /* Stack links vertically */
+                width: 100%;
+                text-align: center;
+                gap: 1em; /* Space between links */
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+                opacity: 0;
+            }
+
+            nav > div:last-child.active {
+                max-height: 200px; /* Adjust based on number of links */
+                opacity: 1;
+            }
+
+            nav a {
+                margin: 0.5em 0; /* More vertical space for tap targets */
+                padding: 0.8em 0; /* Larger tap area */
+                font-size: 1.1em; /* Larger font for legibility */
+                border-bottom: 1px solid var(--pink-light); /* Separator */
+            }
+
+            nav a:last-child {
+                border-bottom: none; /* No border on the last link */
+            }
+
+            nav a:hover::after {
+                display: none; /* Hide hover underline on mobile to simplify */
+            }
+
+            /* Add a Hamburger Icon */
+            nav .hamburger-toggle { /* Target the new hamburger button */
+                display: block; /* Show the hamburger button */
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 900;
+                font-size: 1.8em;
+                color: var(--pink-dark);
+                cursor: pointer;
+                position: absolute;
+                top: 1em;
+                right: 1.5em;
+                z-index: 101; /* Ensure it's above other elements */
+            }
+
+            /* Hide desktop navigation and show hamburger toggle */
+            nav > div:last-child {
+                display: none; /* Hidden by default */
+            }
+
+            /* JavaScript will toggle this */
+            nav.mobile-active > div:last-child {
+                display: flex;
+            }
+
+            /* Adjust nav for hamburger */
+            nav {
+                padding-top: 1.5em; /* Give space for hamburger */
+                position: relative; /* For absolute positioning of hamburger */
+            }
+
+
+            /* Hero Section */
+            .trust-hero {
+                padding: 3em 1em 2em; /* Reduced vertical padding, tighter horizontal */
+                text-align: left; /* Align text left for mobile */
+                border-bottom-left-radius: 30px; /* More prominent bottom curve */
+                border-bottom-right-radius: 30px;
+            }
+
+            .trust-hero h1 {
+                font-size: 2.2em; /* Larger for impact */
+                line-height: 1.2;
+                margin-bottom: 0.8em;
+                max-width: 90%; /* Prevent text from touching edges */
+            }
+
+            .trust-hero p {
+                font-size: 1.1em; /* Readable size */
+                /* max-width: 95%; Adjust width */
+                /* margin: 0 0 2em; Left align margin */
+                text-align: center;
+            }
+
+            .trust-hero::before, .trust-hero::after {
+                display: none; /* Hide decorative elements on small screens */
+            }
+
+            .trust-badge {
+                flex-direction: column;
+                /* text-align: left; */
+                box-shadow: 0 5px 20px rgba(255, 150, 200, 0.25); /* Stronger shadow */
+                width: 90%; /* Take up more width */
+                justify-content:center;
+                padding: 0.8em; /* More comfortable padding */
+                text-align: center !important;
+                margin: auto auto; /* Center the badge */
+                margin-left: 1rem;
+            }
+            
+
+            .trust-badge i {
+                font-size: 2.2em; /* Larger icon */
+                margin-right: 0.8em;
+            }
+
+            .trust-badge-text h3 {
+                font-size: 1.15em;
+            }
+
+            .trust-badge-text p {
+                text-align: center;
+                font-size: 0.95em;
+            }
+
+            /* Main Content */
+            .trust-content {
+                padding: 2em 1em; /* Tighter padding */
+            }
+
+            .trust-section {
+                margin-bottom: 3em; /* Less space between sections */
+                padding: 2em 1.5em; /* Tighter padding */
+                border-radius: 15px; /* Slightly smaller radius */
+            }
+
+            .trust-section h2 {
+                font-size: 1.8em; /* Slightly smaller for mobile context */
+                margin-bottom: 0.8em;
+            }
+
+            .trust-section p {
+                font-size: 1em; /* Standard readable text */
+                margin-bottom: 1em;
+            }
+
+            .section-icon {
+                width: 50px; /* Slightly smaller icon */
+                height: 50px;
+                margin-bottom: 1em;
+            }
+
+            .section-icon i {
+                font-size: 1.5em;
+            }
+
+            /* Feature Grid */
+            .feature-grid {
+                grid-template-columns: 1fr; /* Single column */
+                gap: 1.5em; /* More space between items */
+                margin: 1.5em 0;
+            }
+
+            .feature-item {
+                padding: 1.8em; /* Adjusted padding */
+                border-radius: 12px;
+            }
+
+            .feature-item i {
+                font-size: 2.8em; /* Larger icons for features */
+            }
+
+            .feature-item h3 {
+                font-size: 1.2em;
+            }
+
+            /* Process Steps - Mobile Specific Overrides */
+            .timeline-line {
+                left: 30px; /* Align line to the left on small screens */
+                transform: translateX(0);
+            }
+
+            .timeline-step {
+                flex-direction: row !important; /* Force content on the right for all steps */
+                justify-content: flex-start; /* Align items to the start */
+                text-align: left !important; /* Force text to left for all steps */
+                padding: 0; /* Remove padding that might interfere */
+            }
+
+            .step-number {
+                width: 50px; /* Slightly smaller number circle */
+                height: 50px;
+                font-size: 1.3em;
+                margin: 0 1.2em 0 0; /* Adjust margin for mobile */
+                flex-shrink: 0;
+            }
+
+            .step-content {
+                max-width: calc(100% - 70px); /* Adjust max-width for mobile (number width + margin) */
+                text-align: left !important; /* Ensure text alignment is left on mobile */
+                padding: 1.2em; /* Tighter padding for content box */
+            }
+
+            .timeline-step:nth-child(odd) .step-content,
+            .timeline-step:nth-child(even) .step-content {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            /* What We Never Do Section */
+            div[style*="grid-template-columns"] { /* Target the inline-styled grid for "What We Never Do" */
+                grid-template-columns: 1fr; /* Single column */
+                gap: 1em; /* Tighter gap */
+            }
+
+            div[style*="grid-template-columns"] > div {
+                padding: 1.2em; /* Tighter padding */
+                border-radius: 6px;
+            }
+
+            div[style*="grid-template-columns"] h3 {
+                font-size: 1.1em;
+            }
+
+            /* Guarantee Section */
+            .guarantee-section {
+                padding: 2.5em 1.5em; /* Tighter padding */
+                border-radius: 15px;
+                margin: 2.5em 0;
+            }
+
+            .guarantee-icon {
+                font-size: 3.5em;
+                margin-bottom: 0.8em;
+            }
+
+            .guarantee-section h2 {
+                font-size: 1.8em;
+                margin-bottom: 0.8em;
+            }
+
+            .guarantee-section p {
+                font-size: 1.05em;
+            }
+
+            /* FAQ Section */
+            .faq-item {
+                margin-bottom: 1em; /* Less space between FAQs */
+                border-radius: 8px;
+            }
+
+            .faq-question {
+                padding: 1.2em 1.5em; /* Tighter padding */
+            }
+
+            .faq-question h3 {
+                font-size: 1em; /* Slightly smaller font */
+            }
+
+            .faq-answer {
+                padding: 1.2em 1.5em;
+            }
+
+            /* Contact Section */
+            .trust-section:last-of-type { /* Target the last trust-section for contact */
+                margin-bottom: 2em; /* Less margin at the bottom */
+            }
+
+            .trust-section a {
+                font-size: 1em; /* Smaller contact email font */
+            }
+
+            /* CTA Section */
+            .trust-cta {
+                padding: 2em 1em; /* Tighter padding */
+            }
+
+            .trust-cta h2 {
+                font-size: 1.8em;
+            }
+
+            .trust-cta p {
+                font-size: 1em;
+                margin-bottom: 1.5em;
+            }
+
+            .cta-button {
+                padding: 1.1em 2.2em; /* Slightly larger tap target */
+                font-size: 1.1em;
+            }
+
+            /* Footer - Mobile Version (Updated) */
+            footer {
+                padding: 2em 1.5em; /* Adjusted padding for mobile */
+                margin-top: 3em;
+            }
+
+            footer .footer-container {
+                flex-direction: column; /* Stack columns vertically */
+                gap: 2.5em; /* More space between stacked sections */
+                text-align: center; /* Center align text */
+            }
+
+            footer .footer-col {
+                min-width: 100%; /* Take full width */
+                text-align: center; /* Center text within column */
+            }
+
+            footer .footer-col h3 {
+                font-size: 1.2em;
+                margin-bottom: 0.8em;
+            }
+
+            footer .footer-col ul li {
+                margin-bottom: 0.6em;
+            }
+
+            footer .footer-col ul li a {
+                font-size: 1em; /* Readable font size */
+            }
+
+            footer .footer-col p,
+            footer .footer-col address {
+                font-size: 0.9em;
+                margin-bottom: 0.6em;
+            }
+
+            footer .social-icons {
+                margin-top: 1em;
+                display: flex; /* Use flex to center icons */
+                justify-content: center;
+                gap: 1.5em; /* Space between social icons */
+            }
+            footer .social-icons a {
+                margin-right: 0; /* Remove extra margin */
+            }
+
+            footer .footer-bottom {
+                padding-top: 1.5em;
+                margin-top: 1.5em;
+                font-size: 0.8em;
+            }
+        }
+       
+        </style>
+</head>
+
+<body>
+    <nav id="mainNav">
+        <div class="logo">
+            <img src="../assests/images/logomainWithoutText.png" alt="Love Charts Logo">
+            <h1>Love Charts</h1>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#ordernow">Order Now</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="trust-hero">
+        <h1>Your Privacy, Our Priority:<br>The Love Charts Trust Center</h1>
+        <p>Complete transparency about how we protect your most personal conversations. We believe beautiful memories shouldn't compromise your privacy.</p>
+        <div class="trust-badge">
+            <i class="fas fa-shield-check"></i>
+            <div class="trust-badge-text">
+                <h3>Zero Data Retention</h3>
+                <p>Your conversations are deleted immediately after processing</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-content">
+
+        <section class="trust-section">
+            <div class="section-icon">
+                <i class="fas fa-heart-circle-check"></i>
+            </div>
+            <h2>Our Privacy Promise</h2>
+            <p>At Love Charts, we understand that your conversations are deeply personal. Every message, every moment, every memory you share with us is treated with the utmost care and respect. We've built our entire system around one fundamental principle: **your privacy comes first, always.**</p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-eye-slash"></i>
+                    <h3>Never Read by Humans</h3>
+                    <p>Your chats are processed entirely by automated algorithms. No human ever sees or reads your personal conversations.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>No Account Required</h3>
+                    <p>Create your Love Chart without signing up, logging in, or providing any personal information beyond your chat file.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-ad"></i>
+                    <h3>No Ads, No Tracking</h3>
+                    <p>We don't track your behavior, serve ads, or sell your data. Our business model is simple: you pay for a service, we deliver it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="section-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <h2>How We Handle Your Data</h2>
+            <p>Here's exactly what happens to your chat file from the moment you upload it to when your Love Chart is created:</p>
+
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Secure Upload</h3>
+                        <p>Your file is encrypted using HTTPS/TLS 1.3 during transmission. This is the same level of security used by banks and ensures no one can intercept your data in transit.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Temporary Processing</h3>
+                        <p>Your chat file is stored temporarily on our secure server for processing only. Our automated algorithm analyzes patterns, frequency, and timing - never the actual content.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Chart Generation</h3>
+                        <p>The algorithm creates your beautiful Love Chart based on conversation patterns. Only statistical data (message counts, time patterns) is used - never message content.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Complete Deletion</h3>
+                        <p>Within 24 hours, your original chat file is permanently deleted from all our systems. Only your final Love Chart remains, which contains no readable text.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Delivery to You</h3>
+                        <p>Your Love Chart is delivered securely. We keep no copies, and only you have access to the final artwork.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="section-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h2>Technical Security Measures</h2>
+            <p>We employ industry-standard security practices to protect your data throughout the entire process:</p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>HTTPS Encryption</h3>
+                    <p>All data transmission uses TLS 1.3 encryption, the highest standard available. This ensures your files cannot be intercepted during upload.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Secure Processing</h3>
+                    <p>Our servers process your data in isolated, secure environments with no external network access during processing.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-trash-alt"></i>
+                    <h3>Automatic Purging</h3>
+                    <p>Automated systems ensure all temporary files are permanently deleted within 24 hours, with no human intervention required.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="section-icon">
+                <i class="fas fa-ban"></i>
+            </div>
+            <h2>What We Never Do</h2>
+            <p>Here are our firm commitments about what we will never do with your data:</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5em; margin-top: 2em;">
+                <div style="padding: 1.5em; background: #fff2f2; border-left: 4px solid #ff6b6b; border-radius: 8px;">
+                    <h3 style="color: #d63031; margin-bottom: 0.5em;">✗ Read Your Messages</h3>
+                    <p style="margin: 0; color: var(--text-light);">No human ever sees the content of your conversations. Ever.</p>
+                </div>
+                <div style="padding: 1.5em; background: #fff2f2; border-left: 4px solid #ff6b6b; border-radius: 8px;">
+                    <h3 style="color: #d63031; margin-bottom: 0.5em;">✗ Store Your Data</h3>
+                    <p style="margin: 0; color: var(--text-light);">We permanently delete your chat files after processing.</p>
+                </div>
+                <div style="padding: 1.5em; background: #fff2f2; border-left: 4px solid #ff6b6b; border-radius: 8px;">
+                    <h3 style="color: #d63031; margin-bottom: 0.5em;">✗ Share or Sell</h3>
+                    <p style="margin: 0; color: var(--text-light);">Your data is never shared, sold, or used for any other purpose.</p>
+                </div>
+                <div style="padding: 1.5em; background: #fff2f2; border-left: 4px solid #ff6b6b; border-radius: 8px;">
+                    <h3 style="color: #d63031; margin-bottom: 0.5em;">✗ Track You</h3>
+                    <p style="margin: 0; color: var(--text-light);">No cookies, no analytics, no behavioral tracking of any kind.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guarantee-section">
+            <div class="guarantee-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <h2>Our Privacy Guarantee</h2>
+            <p>We guarantee that your conversations remain completely private. If you're not satisfied with our privacy protection, we offer a full refund - though we're confident you'll trust our process once you see how seriously we take your privacy.</p>
+        </section>
+
+        <section class="trust-section">
+            <div class="section-icon">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <h2 id="faq-section">Frequently Asked Questions</h2>
+
+            <div class="faq-item" id="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Can anyone at Love Charts read my messages?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely not. Your conversations are processed entirely by automated algorithms. No human at Love Charts ever sees or has access to your personal messages. Our staff only sees the final artistic visualization, which contains no readable text.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>How long do you keep my chat data?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Your original chat file is permanently deleted within 24 hours of processing. We only retain the final Love Chart artwork (which contains no readable messages) and basic order information for customer service purposes.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Is my data secure during upload?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. All uploads use HTTPS with TLS 1.3 encryption - the same security standard used by banks. This means your data cannot be intercepted during transmission to our servers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Do you use my data for training AI or other purposes?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Never. Your chat data is used solely to create your Love Chart and is then permanently deleted. We don't use your conversations for AI training, research, or any other purpose beyond creating your artwork.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Can I see proof that my data has been deleted?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>While we can't provide individual deletion certificates, our automated systems are designed to permanently purge all temporary files within 24 hours. This process happens automatically without human intervention, ensuring consistent data protection.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>What if there's a data breach?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Since we don't store your chat data beyond 24 hours, there's virtually nothing to breach. Even if someone gained access to our systems, they would only find statistical data and artistic visualizations - never your actual conversations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="section-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h2>Still Have Questions?</h2>
+            <p>We believe in complete transparency. If you have any questions about our privacy practices that aren't answered here, we'd love to hear from you.</p>
+            <div style="text-align: center; margin-top: 2em;">
+                <a href="mailto:contact.lovecharts@gmail.com" target="_blank" style="color: var(--pink-dark); text-decoration: none; font-weight: 600; font-size: 1.1em;">
+                    <i class="fas fa-envelope" style="margin-right: 0.5em;"></i>
+                    contact.lovecharts@gmail.com
+                </a>
+                <br>
+                <a href="https://www.instagram.com/lovecharts_" target="_blank" style="color: var(--pink-dark); text-decoration: none; font-weight: 600; font-size: 1.1em;">
+                    <i class="fas fa-instagram" style="margin-right: 0.5em;"></i>
+                    Love Charts Instagram
+                </a>
+            </div>
+        </section>
+
+        <div class="trust-cta">
+            <h2 style="margin-bottom: 1em; color: var(--text-dark);">Ready to Create Your Love Chart?</h2>
+            <p style="margin-bottom: 2em; color: var(--text-light); max-width: 600px; margin-left: auto; margin-right: auto;">Now that you know how seriously we take your privacy, you can create your Love Chart with complete confidence.</p>
+            <a href="../index.html#ordernow" class="cta-button">Create Your Chart Now</a>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col footer-info">
+                <div class="logo">
+                    <img src="../assests/images/footerlogo.png" alt="Love Charts Logo">
+                    <h1>Love Charts</h1>
+                </div>
+                <p style="margin-top: 1em; color: var(--text-light);">Crafting unique visualizations of your cherished conversations.</p>
+                <div class="social-icons" style="margin-top: 1.5em;">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/lovecharts_" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="../index.html#ordernow">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <!-- <li><a onclick="smoothScrollTo('faq-item')">FAQ</a></li> -->
+                    <li><a href="#faq-section">FAQ</a></li>
+                    <!-- <li><a href="privacy-policy.html">Privacy Policy</a></li> 
+                    <li><a href="terms-of-service.html">Terms of Service</a></li> -->
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <address>
+                    Email: <a href="mailto:contact.lovecharts@gmail.com" style="color: var(--text-dark); text-decoration: none;">contact.lovecharts@gmail.com</a><br>
+                </address>
+                <address>
+                    Instagram: <br><a href="https://www.instagram.com/lovecharts_" style="color: var(--text-dark); text-decoration: none;">Love Charts Instagram</a><br>
+                </address>
+                <p style="font-size: 0.87rem;">We are available 24/7 Mon-Sun for you</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Love Charts. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.fas');
+            answer.classList.toggle('active');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.getElementById('mainNav');
+            const navLinks = nav.querySelector('.nav-links'); // Select the div containing the nav links
+
+            // Add an event listener to the nav itself to act as the hamburger button area
+            nav.addEventListener('click', function(event) {
+                // Check if the click was on the ::before pseudo-element acting as the hamburger
+                // This is a bit tricky with pseudo-elements, so we'll rely on the parent element's class
+                // Or, if you prefer, add a specific button element for the hamburger in HTML
+                // For this example, I'll make the click on the logo or top-right area toggle it.
+                // A better approach would be to add a <button> for the hamburger in HTML.
+
+                // A more direct way: check if the event target is the nav itself or its immediate children (excluding logo/links)
+                // For simplicity, let's assume the hamburger toggle is a general click on the nav area (excluding links)
+                // OR, specifically add a class to the nav to represent the clickable area.
+
+                // Let's add an explicit hamburger button in JS for better control.
+                // This requires a minor HTML addition:
+                // <button class="hamburger-btn" aria-label="Toggle navigation">&#9776;</button>
+                // For now, I'll simulate a click on the top-right area.
+
+                // New approach: Add a class to the nav and check for it in the CSS
+                if (window.innerWidth <= 768) {
+                    // Toggle the 'mobile-active' class on the nav element
+                    // The CSS will then show/hide the .nav-links
+                    if (event.target.closest('a') === null && event.target.closest('.logo') === null) {
+                         // Only toggle if not clicking on a link or the logo
+                        nav.classList.toggle('mobile-active');
+                        // Also toggle the active class on the nav links for smooth animation
+                        navLinks.classList.toggle('active');
+                    }
+                }
+            });
+
+            // Prevent nav links from toggling the menu when clicked
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        nav.classList.remove('mobile-active');
+                        navLinks.classList.remove('active');
+                    }
+                });
+            });
+
+            // Initial state for mobile - if loaded on mobile, hide links
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active'); // Ensure hidden on load
+            }
+        });
+
+        // Implement smooth scroll effect
+    function smoothScrollTo(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+    </script>
+</body>
+
+</html>
