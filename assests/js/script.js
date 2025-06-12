@@ -614,8 +614,84 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// Code to activate choose your platoform and device manually
+function activateChatExportSection(platform, device) {
+    // Sanitize inputs to lowercase for consistent matching
+    platform = platform.toLowerCase();
+    device = device.toLowerCase();
+
+    // 1. Activate the chosen platform
+    const platformOptions = document.querySelectorAll('.platform-selector .selector-option');
+    let platformFound = false;
+    platformOptions.forEach(option => {
+        if (option.getAttribute('data-platform') === platform) {
+            option.click(); // Simulate click to activate
+            platformFound = true;
+        } else {
+            option.classList.remove('active'); // Ensure others are inactive
+        }
+    });
+
+    if (!platformFound) {
+        console.warn(`Platform "${platform}" not found. Available platforms are: whatsapp, instagram.`);
+        return; // Stop if platform is invalid
+    }
+
+    // 2. Activate the chosen device
+    const deviceOptions = document.querySelectorAll('.device-selector .selector-option');
+    let deviceFound = false;
+    deviceOptions.forEach(option => {
+        if (option.getAttribute('data-device') === device) {
+            option.click(); // Simulate click to activate
+            deviceFound = true;
+        } else {
+            option.classList.remove('active'); // Ensure others are inactive
+        }
+    });
+
+    if (!deviceFound) {
+        console.warn(`Device "${device}" not found. Available devices are: android, iphone, pc.`);
+        return; // Stop if device is invalid
+    }
+
+    console.log(`Activated platform: ${platform}, Device: ${device}`);
+}
 
 
+function getUserDeviceType() {
+    const userAgent = navigator.userAgent;
+
+    // Detect Android
+    if (/Android/i.test(userAgent)) {
+        return 'android';
+    }
+
+    // Detect iPhone (iOS) - includes iPad and iPod touch as they share the same core OS
+    // Modern iOS user agents might not explicitly say 'iPhone' or 'iPad' but 'MacIntel' with a specific AppleWebKit version.
+    // However, for typical browser usage, checking for 'iPhone', 'iPad', or 'Mac' combined with 'Mobile' or 'iOS' is robust.
+    if (/iPhone|iPad|iPod/i.test(userAgent) || (/(Mac)/i.test(userAgent) && 'ontouchstart' in window)) {
+        return 'iphone'; // Grouping all iOS devices under 'iphone' for instructions
+    }
+
+    // Detect PC (Windows, macOS, Linux)
+    // If not Android or iOS, it's likely a desktop/laptop
+    if (/Windows|Macintosh|Linux/i.test(userAgent)) {
+        return 'pc';
+    }
+
+    // Fallback for unknown or other devices
+    return 'android'; // Default to PC as it's the most common fallback, or you can use 'unknown'
+}
+
+
+function smartScrollForUser(platform){
+    device = getUserDeviceType();
+    if (!device){
+        device ='android';
+    }
+    smoothScrollTo('chatInstruction1');
+    activateChatExportSection(platform,device)
+}
 
 
 
