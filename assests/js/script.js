@@ -86,9 +86,9 @@ const productPrice = document.getElementById('product-price');
 
 // Images for different themes (placeholder paths for now)
 const productImages = {
-    'azure-bloom': {
-        'digital': 'assests/images/Theme1/1.png',
-        'framed': 'assests/images/framed_themes/1.png'
+    'new_theme_1': {
+        'digital': 'assests/images/newTheme/newTheme1.png',
+        'framed': 'assests/images/newTheme/newThemeFramed/newThemeFramed1.png'
     },
     'linen-blue': {
         'digital': 'assests/images/Theme1/2.png',
